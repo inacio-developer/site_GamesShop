@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-title: "Bungee";
+  --font-text: "roboto";
+  --color-one: #182c61;
+  --color-two: #ecf0f1;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-text);
+}
+
+h1, h2, h3, nav li, .submit  {
+  font-family: var(--font-title);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+  max-width: 95%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header, footer {
+  padding: 1.6rem 0;
+  color: var(--color-two);
+  background-color: var(--color-one);;
+}
+
+header .logo-title {
+  display: flex;
+  gap: 1rem
+}
+
+header img {
+  filter: drop-shadow(0px 0px 1px #23468C);
+  animation: logo-animation 2s ease-in-out alternate infinite;
+}
+
+@keyframes logo-animation {
+  0% {
+    transform: translateY(5px)
+  }
+  50% {
+    transform: translateY(-9px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
+
+header h1 {
+  font-size: 3.2rem;
+}
+
+nav li {
+  display: inline;
+  margin-left: 16px;
+  font-size: 1.8rem;
+}
+
+nav li:nth-of-type(1) {
+  margin-left: 0;
+}
+
+nav li a {
+  color: var(--color-two);
+  transition: .4s;
+}
+
+a:visited {
+  color: var(--color-two);
+}
+
+nav li a:hover {
+  text-decoration: none;
+  color: #6F7E8C;
+}
+
+section {
+  padding: 2.4rem 0;
+}
+
+section h2, h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+  font-weight: 500;
+  color: var(--color-one)
+}
+
+section h3 {
+  font-size: 1.8rem;
+}
+
+#about .container{
+  align-items: flex-start;
+}
+
+#about {
+  color:  var(--color-one)
+}
+
+.store {
+  margin-right: 3.2rem;
+}
+
+#about p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem
+}
+
+#about li {
+  display: inline;
+  margin-right: .8rem;
+}
+
+#about li img {
+  height: 2.4rem
+}
+
+#contact .container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-method {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea, form button {
+  width: 32rem;
+  padding: .8rem;
+  font-family: "roboto";
+  border: 0.1px solid #7b7b7b;
+  border-radius: 2.5px;
+  outline: none;
+  margin-bottom: .8rem;
+}
+
+#contact input:focus, textarea:focus {
+  outline:  var(--color-one) solid 1.9px;
+}
+
+#contact textarea {
+  resize: none;
+  height: 200px;
+}
+
+#contact button {
+  color: white;
+  background-color:  var(--color-one);
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#contact button:hover {
+background-color: #314e9e
+}
+
+#contact li {
+  display: inline;
+  margin-right: .8rem;
+  list-style: none;
+}
+
+#contact img {
+  height: 2.4rem;
+}
+
+andress p {
+  font-size: 1.6rem;
+  color: var(--color-one)
+}
+
+footer {
+  font-size: 1.6rem;
+  font-family: "roboto";
+}
